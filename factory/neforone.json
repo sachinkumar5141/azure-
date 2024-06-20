@@ -1,0 +1,9 @@
+{
+	"name": "neforone",
+	"location": "eastus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8d808da8-9e29-44a1-9b80-456198f40d8e",
+		"tenantId": "5097028e-df2c-48de-aee6-9e114f6c454e"
+	}
+}
