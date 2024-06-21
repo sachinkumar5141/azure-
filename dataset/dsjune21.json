@@ -1,0 +1,40 @@
+{
+	"name": "dsjune21",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage2",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"name": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@dataset().name",
+					"type": "Expression"
+				},
+				"container": "jun20"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "department_id",
+				"type": "String"
+			},
+			{
+				"name": "department_name",
+				"type": "String"
+			}
+		]
+	}
+}
